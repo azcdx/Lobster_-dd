@@ -1,0 +1,29 @@
+LobsterAI 配置和记忆备份文件清单
+=====================================
+备份时间: 2026年02月20日 18:09:05
+备份时间戳: 20260220_180904
+主机名: MS-HLIOQXYOSDQC
+用户: 
+
+重要文件说明:
+-----------
+1. lobsterai.sqlite - 主数据库（包含对话历史、用户记忆、定时任务等）
+2. DIPS - 偏好设置数据库
+3. Preferences - Electron 应用偏好设置
+4. Local State - 本地状态配置
+5. SKILLs/ - 技能配置目录
+6. cowork-bin/ - Cowork 运行时环境
+7. cowork-sandbox/ - 沙箱配置
+8. email-config.env - 邮件配置（敏感信息）
+
+恢复说明:
+---------
+1. 将这些文件复制到新电脑的相同位置
+2. Windows: C:\Users\<你的用户名>\AppData\Roaming\LobsterAI3. 确保 LobsterAI 应用已关闭
+4. 复制文件后重启应用
+
+注意事项:
+---------
+- lobsterai.sqlite 包含所有重要数据，请妥善保管
+- email-config.env 包含密码，不要分享或上传到公开仓库
+- 建议定期备份，特别是在重要配置更改后

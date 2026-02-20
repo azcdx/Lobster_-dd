@@ -1,0 +1,7 @@
+@echo off
+if "%LOBSTERAI_ELECTRON_PATH%"=="" (
+  echo LOBSTERAI_ELECTRON_PATH is not set 1>&2
+  exit /b 127
+)
+set ELECTRON_RUN_AS_NODE=1
+"%LOBSTERAI_ELECTRON_PATH%" %*
